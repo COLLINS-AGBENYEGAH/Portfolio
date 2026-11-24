@@ -112,6 +112,8 @@ section{padding:5rem 2.5rem}
 .service-list{list-style:none}
 .service-list li{font-size:13px;color:#B8C5D9;padding:3px 0 3px 14px;position:relative}
 .service-list li::before{content:'';position:absolute;left:0;top:.85em;width:5px;height:5px;border-radius:50%;background:var(--gold)}
+.service-card.wide{grid-column:1 / -1}
+.service-card.wide .service-list{display:grid;grid-template-columns:1fr 1fr;gap:0 2rem}
 .services-cta{margin-top:2rem;display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.5rem}
 .services-cta p{font-size:14px;color:var(--slate)}
 
@@ -188,7 +190,7 @@ footer span{color:var(--gold);font-weight:500}
   .nav-cta{display:none}
   .hero-inner{flex-direction:column-reverse;gap:2rem}
   .about-grid,.exp-edu-grid,.projects-grid,.certs-grid,.services-grid{grid-template-columns:1fr}
-  .cert-courses{grid-template-columns:1fr}
+  .cert-courses,.service-card.wide .service-list{grid-template-columns:1fr}
   section{padding:3.5rem 1.5rem}
   #home{padding:96px 1.5rem 60px}
   .contact-inner{padding:2rem 1.25rem}
@@ -227,7 +229,7 @@ footer span{color:var(--gold);font-weight:500}
   <div class="hero-glow glow2"></div>
   <div class="hero-inner">
     <div class="hero-text">
-      <div class="hero-badge"><span class="badge-dot"></span>Available for WordPress development, hosting and deployment</div>
+      <div class="hero-badge"><span class="badge-dot"></span>Available for IT support, WordPress development, hosting and deployment</div>
       <h1>Hi, I'm<br><span>Collins Agbenyegah</span></h1>
       <p class="hero-subtitle">IT Support Intern and BSc Information Technology student in Accra, open to IT support and networking roles.</p>
       <p class="hero-desc">I fix computers, connect offices to their networks and printers, build network labs in Packet Tracer and GNS3, and make websites for churches and small organisations. Most of what I know I learned by setting things up, breaking them and working out why.</p>
@@ -287,10 +289,23 @@ footer span{color:var(--gold);font-weight:500}
   <div class="section-inner">
     <p class="section-eyebrow">Services</p>
     <h2 class="section-title">What I can do for you</h2>
-    <p class="section-desc">I take on website and hosting work for churches, ministries, schools and small businesses, from a first draft to a site that is live, secure and easy to keep up to date.</p>
+    <p class="section-desc">I help churches, ministries, schools, small businesses and individuals with their computers, networks and websites, from fixing a slow laptop to getting a new site live, secure and easy to keep up to date.</p>
     <div class="services-grid">
-      <div class="service-card">
+      <div class="service-card wide">
         <div class="service-num">01</div>
+        <h3>IT support</h3>
+        <p>Help for homes and small offices when computers, printers or the internet are not working as they should.</p>
+        <ul class="service-list">
+          <li>Computer setup, repair and troubleshooting</li>
+          <li>Windows and software installation and updates</li>
+          <li>Printer and peripheral setup, including network printers</li>
+          <li>Wi-Fi, router and small office network setup</li>
+          <li>Virus removal and basic security checks</li>
+          <li>Data backup and moving files to a new computer</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <div class="service-num">02</div>
         <h3>WordPress website development</h3>
         <p>A website that matches your organisation and that your team can update without calling a developer.</p>
         <ul class="service-list">
@@ -301,7 +316,7 @@ footer span{color:var(--gold);font-weight:500}
         </ul>
       </div>
       <div class="service-card">
-        <div class="service-num">02</div>
+        <div class="service-num">03</div>
         <h3>Hosting and deployment</h3>
         <p>Getting your site or web app online on the right hosting, with a proper domain, email and security.</p>
         <ul class="service-list">
@@ -312,7 +327,7 @@ footer span{color:var(--gold);font-weight:500}
         </ul>
       </div>
       <div class="service-card">
-        <div class="service-num">03</div>
+        <div class="service-num">04</div>
         <h3>Business email setup</h3>
         <p>Email addresses on your own domain, set up so that website forms actually reach you.</p>
         <ul class="service-list">
@@ -322,7 +337,7 @@ footer span{color:var(--gold);font-weight:500}
         </ul>
       </div>
       <div class="service-card">
-        <div class="service-num">04</div>
+        <div class="service-num">05</div>
         <h3>Website care and support</h3>
         <p>Ongoing help once the site is live, so it stays fast, secure and visible on Google.</p>
         <ul class="service-list">
@@ -334,7 +349,7 @@ footer span{color:var(--gold);font-weight:500}
       </div>
     </div>
     <div class="services-cta">
-      <a href="mailto:agbenyegahcollins3@gmail.com?subject=Website%20or%20hosting%20project" class="btn-gold">Ask about a project</a>
+      <a href="mailto:agbenyegahcollins3@gmail.com?subject=IT%20support%20or%20website%20request" class="btn-gold">Ask about a project</a>
       <p>Tell me what you need and I will reply with how I would approach it and a price.</p>
     </div>
   </div>
@@ -644,7 +659,7 @@ footer span{color:var(--gold);font-weight:500}
     <h2 class="section-title">Get in touch</h2>
     <div class="contact-inner">
       <h3>Need IT support, a website or help going live?</h3>
-      <p>I'm open to IT support and networking roles, and to WordPress, hosting and deployment projects. Email is the best way to reach me, and I usually reply within a day.</p>
+      <p>I'm open to IT support and networking roles, and to IT support, WordPress, hosting and deployment work. Email is the best way to reach me, and I usually reply within a day.</p>
       <div class="contact-items">
         <a href="mailto:agbenyegahcollins3@gmail.com" class="contact-item">agbenyegahcollins3@gmail.com</a>
         <a href="tel:+233551878684" class="contact-item">+233 55 187 8684</a>
